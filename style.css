@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden
+}
+.contenar{
+    margin: 0 7rem;
+    height: 100%;
+
+}
+a{
+    text-decoration: none;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+} 
+li{
+    justify-content: space-between;
+    align-items: center; 
+}
+#home{
+    height: 100vh;
+    background: #0162be;
+    color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+nav .logo{
+    width: 50px;
+}
+nav ul a{
+    color: #fff;
+    padding: 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+
+}
+.content img{
+    width: 250px;
+    animation: animation1 1s ease-out;
+}
+h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 400;
+
+}
+h1 span{
+    font-size: 70px;
+}
+p{
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height:1.4 ;
+    width: 60%;
+}
+
+.btn{
+    font-size: 14px;
+    padding:10px 15px ;
+    background-color: #fff;
+    border-radius: 30px;
+    color: black;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid ;
+}
+
+.social{
+    margin-left:3rem ;
+    animation: animation2 1s ease-out;
+} 
+
+.social i{
+    color: #fff;
+    font-size: 25px;
+    margin: 10px;
+}
+.types{
+    display: block;
+    width:100px;
+    margin: auto;
+    
+    
+}
+
+@keyframes animation1 {
+    0%{
+        transform: translateX(500px);
+      
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes animation2{
+    0%{
+        transform: translateX(500px);
+      
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width :900px){
+    .contenar{
+        margin: 0 1rem;
+    }
+    nav ul a{
+        padding: 10px;
+    }
+    .content{
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0 0;
+         
+    }
+    p{
+        width: 100%;
+    }
+    #home .content .content-text {
+        margin-bottom: 2rem;
+    }
+    #home .content .content-text {
+        width: 100%;
+    }
+    .content img{
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    .socia{
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+} 
+
+
+@media(max-width:600px)
+{
+    nav{
+        display: block;
+
+    }
+    nav .logo{
+        display: block;
+        margin: 0 auto 15px;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    nav ul a{font-size: 12px;
+    }
+    .types{
+        margin-top: 15px;
+    }
+}
